@@ -1,0 +1,47 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px; margin: 0px;
+    background-color: silver;
+    font-size: 100%;
+    overflow: auto;
+}
+
+.tests{
+    background: linear-gradient(to bottom right,red,white,darkviolet);color: black;font-family: cursive;
+    width: 150px;height: 50px;margin: 50px;
+    position: relative;top: auto;bottom: auto;right: auto;left:0px;
+    
+}
+.tests:hover{transform: rotateX(180deg);}
+
+@keyframes try{
+    0%{background-color: red;width: 50px;left:0px;top: 0px; }
+    25%{background-color: orangered;width: 40px;left: 100px;top: 00px;}
+    50%{background-color: yellow;width: 30px;left: 200px;top: 00px;}
+    75%{background-color: lawngreen;width: 20px;left: 300px;top: 00px;}
+    100%{background-color: white;border: 1px solid black;color: red;width: 10px;left: 400px;top: 00px;}
+}
+
+.tests{
+    animation-name: try;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.art:hover{
+    animation: artanimation 4s ease-in 1s 1 normal; 
+}
+@keyframes artanimation{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 10;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
